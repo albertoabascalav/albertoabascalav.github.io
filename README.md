@@ -1,23 +1,14 @@
-# Web portfolio Alberto Abascal
+# Alberto Abascal Vilariño — web actualizada
 
-Esta es una web base simple para subir a GitHub Pages.
+Sustituye en tu carpeta local:
 
-## Archivos
-- `index.html`: estructura y textos.
-- `style.css`: diseño visual.
-- `assets/img`: carpeta para tus imágenes.
+- `index.html`
+- `style.css`
 
-## Para cambiar imágenes
-Sube fotos a `assets/img` y sustituye un bloque placeholder por algo así:
+La web espera exactamente estas rutas:
 
-```html
-<img src="assets/img/mi-foto.jpg" alt="Descripción breve">
-```
-
-## Para poner el reel
-Sustituye el bloque que dice "AQUÍ VA EL REEL DE YOUTUBE / VIMEO" por el iframe de YouTube o Vimeo.
-
-Ejemplo:
-```html
-<iframe width="100%" height="600" src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
-```
+- `assets/img/portada/portada01.jpg` hasta `portada05.jpg`
+- `assets/img/analogico/Analogico01.jpg` hasta `Analogico09.jpg`
+- `assets/img/bn/bn01.jpg` hasta `bn07.jpg`
+- `assets/img/color/Color01.jpg` hasta `Color09.jpg`
+- `assets/img/producto/Producto01.jpg` hasta `Producto06.jpg`
