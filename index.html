@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Alberto Abascal</title>
   <meta name="description" content="Portfolio audiovisual y fotográfico de Alberto Abascal." />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="site-header">
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#video">Vídeo</a>
-      <a href="#color">Color</a>
-      <a href="#bn">B/N</a>
-      <a href="#producto">Producto</a>
-      <a href="#film">Film</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="#video" data-es="Vídeo" data-en="Video">Vídeo</a>
+      <a href="#color" data-es="Color" data-en="Color">Color</a>
+      <a href="#bn" data-es="B/N" data-en="B/W">B/N</a>
+      <a href="#producto" data-es="Producto" data-en="Product">Producto</a>
+      <a href="#film" data-es="Film" data-en="Film">Film</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     </nav>
+
+    <div class="language-switch">
+      <button type="button" class="lang-btn active" data-lang="es">ES</button>
+      <span>/</span>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
   </header>
 
   <main>
@@ -32,9 +36,7 @@
         <img src="assets/img/portada/portada04.jpg" alt="Imagen de portada">
         <img src="assets/img/portada/portada05.jpg" alt="Imagen de portada">
       </div>
-
       <div class="hero-overlay"></div>
-
       <div class="hero-text">
         <h1>Alberto</h1>
         <h2>Abascal</h2>
@@ -44,133 +46,92 @@
     <section id="video" class="section">
       <div class="section-title">
         <span>01</span>
-        <h2>Vídeo</h2>
+        <h2 data-es="Vídeo" data-en="Video">Vídeo</h2>
       </div>
 
       <div class="video-list">
-
         <article class="video-project">
           <a class="video-cover video-cover-queso" href="https://www.youtube.com/watch?v=LO9PtKW_SSU" target="_blank" rel="noopener">
-            <span>Ver vídeo</span>
+            <span data-es="Ver vídeo" data-en="Watch video">Ver vídeo</span>
           </a>
-
           <div class="project-info">
             <h3>Queso fresco y pimentón — Ojalá Oro</h3>
-            <p class="role">Cámara · experimentación visual</p>
-            <p>Pieza improvisada, grabada sin guion previo, jugando con distintas cámaras digitales sencillas para crear una textura caótica y orgánica.</p>
-            <a class="video-link" href="https://www.youtube.com/watch?v=LO9PtKW_SSU" target="_blank" rel="noopener">Abrir en YouTube</a>
+            <p class="role" data-es="Cámara · experimentación visual" data-en="Camera · visual experimentation">Cámara · experimentación visual</p>
+            <p data-es="Pieza improvisada, grabada sin guion previo, jugando con distintas cámaras digitales sencillas para crear una textura caótica y orgánica." data-en="An improvised piece, shot without a previous script, using different simple digital cameras to create a chaotic and organic texture.">Pieza improvisada, grabada sin guion previo, jugando con distintas cámaras digitales sencillas para crear una textura caótica y orgánica.</p>
+            <a class="video-link" href="https://www.youtube.com/watch?v=LO9PtKW_SSU" target="_blank" rel="noopener" data-es="Abrir en YouTube" data-en="Open on YouTube">Abrir en YouTube</a>
           </div>
         </article>
 
         <article class="video-project">
           <a class="video-cover video-cover-letal" href="https://www.youtube.com/watch?v=pi9Ie8303o8" target="_blank" rel="noopener">
-            <span>Ver vídeo</span>
+            <span data-es="Ver vídeo" data-en="Watch video">Ver vídeo</span>
           </a>
-
           <div class="project-info">
             <h3>Más letal — Kill the Create</h3>
-            <p class="role">Dirección · cámara · iluminación · edición</p>
-            <p>Proyecto realizado íntegramente con recursos mínimos, apostando por un blanco y negro duro, contrastado y agresivo.</p>
-            <a class="video-link" href="https://www.youtube.com/watch?v=pi9Ie8303o8" target="_blank" rel="noopener">Abrir en YouTube</a>
+            <p class="role" data-es="Dirección · cámara · iluminación · edición" data-en="Direction · camera · lighting · editing">Dirección · cámara · iluminación · edición</p>
+            <p data-es="Proyecto realizado íntegramente con recursos mínimos, apostando por un blanco y negro duro, contrastado y agresivo." data-en="A project made entirely with minimal resources, built around a hard, high-contrast and aggressive black-and-white look.">Proyecto realizado íntegramente con recursos mínimos, apostando por un blanco y negro duro, contrastado y agresivo.</p>
+            <a class="video-link" href="https://www.youtube.com/watch?v=pi9Ie8303o8" target="_blank" rel="noopener" data-es="Abrir en YouTube" data-en="Open on YouTube">Abrir en YouTube</a>
           </div>
         </article>
 
         <article class="video-project">
           <a class="video-cover video-cover-espiritual" href="https://www.youtube.com/watch?v=rLxZ0gM23mc" target="_blank" rel="noopener">
-            <span>Ver vídeo</span>
+            <span data-es="Ver vídeo" data-en="Watch video">Ver vídeo</span>
           </a>
-
           <div class="project-info">
             <h3>Espiritual — Balarrasa</h3>
-            <p class="role">Dirección visual · iluminación · concepto</p>
-            <p>Videoclip experimental basado en dobles exposiciones, contrastes fuertes de luz y una estética psicodélica.</p>
-            <a class="video-link" href="https://www.youtube.com/watch?v=rLxZ0gM23mc" target="_blank" rel="noopener">Abrir en YouTube</a>
+            <p class="role" data-es="Dirección visual · iluminación · concepto" data-en="Visual direction · lighting · concept">Dirección visual · iluminación · concepto</p>
+            <p data-es="Videoclip experimental basado en dobles exposiciones, contrastes fuertes de luz y una estética psicodélica." data-en="An experimental music video based on double exposures, strong lighting contrasts and a psychedelic aesthetic.">Videoclip experimental basado en dobles exposiciones, contrastes fuertes de luz y una estética psicodélica.</p>
+            <a class="video-link" href="https://www.youtube.com/watch?v=rLxZ0gM23mc" target="_blank" rel="noopener" data-es="Abrir en YouTube" data-en="Open on YouTube">Abrir en YouTube</a>
           </div>
         </article>
-
       </div>
     </section>
 
     <section id="color" class="section photo-category">
-      <div class="section-title">
-        <span>02</span>
-        <h2>Color</h2>
-      </div>
-
+      <div class="section-title"><span>02</span><h2>Color</h2></div>
       <div class="gallery">
-        <img src="assets/img/color/Color01.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color02.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color03.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color04.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color05.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color06.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color07.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color08.jpg" alt="Fotografía en color">
-        <img src="assets/img/color/Color09.jpg" alt="Fotografía en color">
+        <img src="assets/img/color/Color01.jpg" alt="Fotografía en color"><img src="assets/img/color/Color02.jpg" alt="Fotografía en color"><img src="assets/img/color/Color03.jpg" alt="Fotografía en color">
+        <img src="assets/img/color/Color04.jpg" alt="Fotografía en color"><img src="assets/img/color/Color05.jpg" alt="Fotografía en color"><img src="assets/img/color/Color06.jpg" alt="Fotografía en color">
+        <img src="assets/img/color/Color07.jpg" alt="Fotografía en color"><img src="assets/img/color/Color08.jpg" alt="Fotografía en color"><img src="assets/img/color/Color09.jpg" alt="Fotografía en color">
       </div>
     </section>
 
     <section id="bn" class="section photo-category">
-      <div class="section-title">
-        <span>03</span>
-        <h2>B/N</h2>
-      </div>
-
+      <div class="section-title"><span>03</span><h2 data-es="B/N" data-en="B/W">B/N</h2></div>
       <div class="gallery">
-        <img src="assets/img/bn/bn01.jpg" alt="Fotografía en blanco y negro">
-        <img src="assets/img/bn/bn02.jpg" alt="Fotografía en blanco y negro">
-        <img src="assets/img/bn/bn03.jpg" alt="Fotografía en blanco y negro">
-        <img src="assets/img/bn/bn04.jpg" alt="Fotografía en blanco y negro">
-        <img src="assets/img/bn/bn05.jpg" alt="Fotografía en blanco y negro">
-        <img src="assets/img/bn/bn06.jpg" alt="Fotografía en blanco y negro">
-        <img src="assets/img/bn/bn07.jpg" alt="Fotografía en blanco y negro">
+        <img src="assets/img/bn/bn01.jpg" alt="Fotografía en blanco y negro"><img src="assets/img/bn/bn02.jpg" alt="Fotografía en blanco y negro"><img src="assets/img/bn/bn03.jpg" alt="Fotografía en blanco y negro">
+        <img src="assets/img/bn/bn04.jpg" alt="Fotografía en blanco y negro"><img src="assets/img/bn/bn05.jpg" alt="Fotografía en blanco y negro"><img src="assets/img/bn/bn06.jpg" alt="Fotografía en blanco y negro"><img src="assets/img/bn/bn07.jpg" alt="Fotografía en blanco y negro">
       </div>
     </section>
 
     <section id="producto" class="section photo-category">
-      <div class="section-title">
-        <span>04</span>
-        <h2>Producto</h2>
-      </div>
-
+      <div class="section-title"><span>04</span><h2 data-es="Producto" data-en="Product">Producto</h2></div>
       <div class="gallery">
-        <img src="assets/img/producto/Producto01.jpg" alt="Fotografía de producto">
-        <img src="assets/img/producto/Producto02.jpg" alt="Fotografía de producto">
-        <img src="assets/img/producto/Producto03.jpg" alt="Fotografía de producto">
-        <img src="assets/img/producto/Producto04.jpg" alt="Fotografía de producto">
-        <img src="assets/img/producto/Producto05.jpg" alt="Fotografía de producto">
-        <img src="assets/img/producto/Producto06.jpg" alt="Fotografía de producto">
+        <img src="assets/img/producto/Producto01.jpg" alt="Fotografía de producto"><img src="assets/img/producto/Producto02.jpg" alt="Fotografía de producto"><img src="assets/img/producto/Producto03.jpg" alt="Fotografía de producto">
+        <img src="assets/img/producto/Producto04.jpg" alt="Fotografía de producto"><img src="assets/img/producto/Producto05.jpg" alt="Fotografía de producto"><img src="assets/img/producto/Producto06.jpg" alt="Fotografía de producto">
       </div>
     </section>
 
     <section id="film" class="section photo-category">
-      <div class="section-title">
-        <span>05</span>
-        <h2>Film</h2>
-      </div>
-
+      <div class="section-title"><span>05</span><h2>Film</h2></div>
       <div class="gallery">
-        <img src="assets/img/analogico/Analogico01.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico02.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico03.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico04.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico05.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico06.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico07.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico08.jpg" alt="Fotografía analógica">
-        <img src="assets/img/analogico/Analogico09.jpg" alt="Fotografía analógica">
+        <img src="assets/img/analogico/Analogico01.jpg" alt="Fotografía analógica"><img src="assets/img/analogico/Analogico02.jpg" alt="Fotografía analógica"><img src="assets/img/analogico/Analogico03.jpg" alt="Fotografía analógica">
+        <img src="assets/img/analogico/Analogico04.jpg" alt="Fotografía analógica"><img src="assets/img/analogico/Analogico05.jpg" alt="Fotografía analógica"><img src="assets/img/analogico/Analogico06.jpg" alt="Fotografía analógica">
+        <img src="assets/img/analogico/Analogico07.jpg" alt="Fotografía analógica"><img src="assets/img/analogico/Analogico08.jpg" alt="Fotografía analógica"><img src="assets/img/analogico/Analogico09.jpg" alt="Fotografía analógica">
       </div>
     </section>
 
     <section id="contacto" class="section contact-section">
       <div class="section-title">
         <span>06</span>
-        <h2>Contacto</h2>
+        <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
       </div>
 
-      <p class="about">
-        Profesional audiovisual especializado en fotografía, vídeo y formación creativa,
-        con trayectoria en proyectos culturales y comunicación visual.
+      <p class="about"
+         data-es="Soy Alberto, profesional audiovisual afincado en Barcelona. Trabajo entre la edición, el vídeo y la fotografía, con una mirada creativa, resolutiva y adaptable a cada proyecto."
+         data-en="I’m Alberto, an audiovisual professional based in Barcelona. I work across editing, video and photography, with a creative, practical approach that adapts to each project.">
+        Soy Alberto, profesional audiovisual afincado en Barcelona. Trabajo entre la edición, el vídeo y la fotografía, con una mirada creativa, resolutiva y adaptable a cada proyecto.
       </p>
 
       <div class="contact-links">
@@ -181,22 +142,29 @@
     </section>
   </main>
 
-  <footer>
-    <p>© Alberto Abascal</p>
-  </footer>
+  <footer><p>© Alberto Abascal</p></footer>
 
   <script>
     const slides = document.querySelectorAll('.hero-slider img');
     let currentSlide = 0;
-
     function showNextSlide() {
       if (!slides.length) return;
       slides[currentSlide].classList.remove('active');
       currentSlide = (currentSlide + 1) % slides.length;
       slides[currentSlide].classList.add('active');
     }
-
     setInterval(showNextSlide, 3500);
+
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const translatable = document.querySelectorAll('[data-es][data-en]');
+    function setLanguage(lang) {
+      translatable.forEach(element => element.textContent = element.dataset[lang]);
+      langButtons.forEach(button => button.classList.toggle('active', button.dataset.lang === lang));
+      document.documentElement.lang = lang;
+      localStorage.setItem('site-language', lang);
+    }
+    langButtons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+    if (localStorage.getItem('site-language') === 'en') setLanguage('en');
   </script>
 </body>
 </html>
